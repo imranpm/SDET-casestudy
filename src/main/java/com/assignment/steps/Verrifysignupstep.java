@@ -15,23 +15,19 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class Verrifysignupstep {
-	
+
 	public static WebDriver driver = DriverFactory.getDriver(DriverNames.CHROME);
-	 public static SignupPOM signup = new SignupPOM(driver); 
-    public static RegistrationPom registrationPom = new RegistrationPom(driver); 
-    public static Composemessage composemessage = new Composemessage(driver); 
-    
-    String url = "http://elearningm1.upskills.in"; 
-	
-	
-	
+	public static SignupPOM signup = new SignupPOM(driver);
+	public static RegistrationPom registrationPom = new RegistrationPom(driver);
+	public static Composemessage composemessage = new Composemessage(driver);
+
+	String url = "http://elearningm1.upskills.in";
 
 	@Given("^the website is loaded$")
 
 	public void the_website_is_loaded() throws Throwable {
-		
+
 		driver.get(url);
-		
 
 	}
 
@@ -43,11 +39,10 @@ public class Verrifysignupstep {
 
 	@When("^user wants to register$")
 	public void user_wants_to_register() throws Throwable {
-		
+
 		System.out.println("Clicking on Signup");
 		signup.clickSignupbutton();
 
-		
 	}
 
 	@When("^mandatory fields are populated$")
@@ -56,15 +51,13 @@ public class Verrifysignupstep {
 		// For automatic transformation, change DataTable to one of
 		// List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
 		// E,K,V must be a scalar (String, Integer, Date, enum etc)
-		
+
 		registrationPom.firstname();
 		registrationPom.Lastname();
 		registrationPom.email();
 		registrationPom.username();
 		registrationPom.Pass();
 		registrationPom.Pass2();
-		
-
 
 	}
 
@@ -77,9 +70,9 @@ public class Verrifysignupstep {
 
 	@Then("^display the valid message if registered successfully$")
 	public void display_the_valid_message_if_registered_successfully() throws Throwable {
-		
+
 		registrationPom.validatemessage();
-		
+
 		System.out.println("Validates message");
 
 	}
@@ -91,15 +84,15 @@ public class Verrifysignupstep {
 	}
 
 	@When("^clicked on profile dropdown at top right corner$")
-	public void clicked_on_profile_dropdown_at_top_right_corner()  {
+	public void clicked_on_profile_dropdown_at_top_right_corner() {
 		registrationPom.clickingonlogo();
 		System.out.println("Clicked on logodropdown");
 
 	}
 
 	@Then("^display profile details such as name and email$")
-	public void display_profile_details_such_as_name_and_email()  {
-		
+	public void display_profile_details_such_as_name_and_email() {
+
 		System.out.println("username and email displayed");
 
 	}
@@ -107,14 +100,14 @@ public class Verrifysignupstep {
 	@Then("^validate name and email of the user\\.$")
 	public void validate_name_and_email_of_the_user() throws Throwable {
 		registrationPom.verifyingemailandname();
-		
+
 		System.out.println("Email is verified");
 	}
 
 	@Given("^user wants to send an message to other user$")
 	public void user_wants_to_send_an_message_to_other_user() throws Throwable {
 		registrationPom.clikingonhome();
-		
+
 		System.out.println("clciked on home button");
 		registrationPom.clikingcompose();
 		composemessage.Sendto();
@@ -122,7 +115,6 @@ public class Verrifysignupstep {
 		composemessage.Message();
 		composemessage.clicksendmessage();
 		composemessage.verifyingemailack();
-		
 
 	}
 

@@ -71,11 +71,11 @@ formatter.step({
     },
     {
       "cells": [
-        "ravi",
-        "chandra",
-        "ravichandrasurabhi@gmail.com",
-        "ravi",
-        "Welcome123"
+        "imran",
+        "pm",
+        "pmimran7@gmail.com",
+        "imran",
+        "imran123"
       ],
       "line": 12
     }
@@ -96,42 +96,42 @@ formatter.match({
   "location": "Verrifysignupstep.the_website_is_loaded()"
 });
 formatter.result({
-  "duration": 10556320100,
+  "duration": 11036421799,
   "status": "passed"
 });
 formatter.match({
   "location": "Verrifysignupstep.engilsh_is_selected_as_Language_on_the_home_page()"
 });
 formatter.result({
-  "duration": 108800,
+  "duration": 156500,
   "status": "passed"
 });
 formatter.match({
   "location": "Verrifysignupstep.user_wants_to_register()"
 });
 formatter.result({
-  "duration": 2369238900,
+  "duration": 2567087799,
   "status": "passed"
 });
 formatter.match({
   "location": "Verrifysignupstep.mandatory_fields_are_populated(DataTable)"
 });
 formatter.result({
-  "duration": 881007200,
+  "duration": 919655600,
   "status": "passed"
 });
 formatter.match({
   "location": "Verrifysignupstep.clicking_on_the_Register_button()"
 });
 formatter.result({
-  "duration": 1645358100,
+  "duration": 1578095700,
   "status": "passed"
 });
 formatter.match({
   "location": "Verrifysignupstep.display_the_valid_message_if_registered_successfully()"
 });
 formatter.result({
-  "duration": 37166600,
+  "duration": 38015600,
   "status": "passed"
 });
 formatter.scenario({
@@ -172,28 +172,28 @@ formatter.match({
   "location": "Verrifysignupstep.user_registered_successfully()"
 });
 formatter.result({
-  "duration": 58100,
+  "duration": 94400,
   "status": "passed"
 });
 formatter.match({
   "location": "Verrifysignupstep.clicked_on_profile_dropdown_at_top_right_corner()"
 });
 formatter.result({
-  "duration": 127473600,
+  "duration": 119666000,
   "status": "passed"
 });
 formatter.match({
   "location": "Verrifysignupstep.display_profile_details_such_as_name_and_email()"
 });
 formatter.result({
-  "duration": 67000,
+  "duration": 73401,
   "status": "passed"
 });
 formatter.match({
   "location": "Verrifysignupstep.validate_name_and_email_of_the_user()"
 });
 formatter.result({
-  "duration": 56390800,
+  "duration": 46116700,
   "status": "passed"
 });
 formatter.scenario({
@@ -219,7 +219,7 @@ formatter.match({
   "location": "Verrifysignupstep.user_wants_to_send_an_message_to_other_user()"
 });
 formatter.result({
-  "duration": 28203195900,
+  "duration": 28295437600,
   "status": "passed"
 });
 });
